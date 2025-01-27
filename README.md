@@ -2,11 +2,13 @@
 This code provides a Python-based CNC calibration model that calculates and adjusts steps-per-unit, synchronizes dual rack systems, fine-tunes backlash, and visually displays the results in a user-friendly GUI.
 
 **CNC Calibration Model Explanation**
+
 **1. Problem Description:**
 Adam faced several challenges with his dual rack-and-pinion CNC system, including:
 - Inaccurate travel distances: Software overestimated motion due to incorrect steps-per-unit settings.
 - Synchronization issues: Dual racks required alignment for coordinated motion.
 - Backlash compensation: Mechanical play caused inaccuracies, needing precise tuning.
+
 **2. Key Components:**
 a. Calculate Steps Per Unit:
 Formula:
@@ -28,14 +30,17 @@ Formula:
 Tuned Backlash = Current Backlash × Adjustment Factor
 
 Backlash tuning reduces errors caused by mechanical play, improving the accuracy of CNC operations.
+
 **3. GUI (Graphical User Interface):**
 Purpose:
 - Provide a user-friendly interface for viewing calibration results.
 - Display key metrics like steps-per-unit, adjusted calibration values, travel distance, and backlash tuning results.
+
 **4. Assumptions:**
 - Motor steps, microstepping, and pinion dimensions are accurate.
 - Dual racks are mechanically aligned for synchronized motion.
 - Backlash adjustment is feasible within the system’s tolerances.
+
 **5. Workflow:**
 1. Input Parameters: Provide motor, pinion, and motion details.
 2. Calculate Steps Per Unit: Use motor specs and pinion geometry.
